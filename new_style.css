@@ -1,0 +1,24 @@
+#menu_item{
+  border: 2px solid black;
+  width: 30%;
+  height: 100px;
+
+  margin: 1%;
+
+  float: left;
+  display: inline-block;
+  color: #da4e41;
+  background-color: #da4e41;
+
+  text-align: center;
+}
+
+#menu_item:hover{
+  border: 2px solid black;
+  width: 30%;
+  height: 100px;
+  float: left;
+  display: inline-block;
+  color: black;
+  background-color: white;
+}
