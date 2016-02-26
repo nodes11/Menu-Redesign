@@ -1,13 +1,31 @@
-div#item_type{
-
+div.it {
+  display: inline-block;
+  position: relative;
+  width: 30%;
+}
+div > h2.it{
+  border: 2px solid black;
+  border-radius: 5px;
+  position: relative;
+  text-align: center;
 }
 
 div > h2 {
   color: black;
 }
 
+div.popup{
+  display: none;
+  color: yellow;
+  background-color: red;
+  width: 500px;
+  height: 100%;
+  top: 50%;
+  position: absolute;
+}
+
 #menu_item{
-  border: 2px solid black;
+  /*border: 2px solid black;
   border-radius: 10px;
 
   width: 28%;
@@ -20,7 +38,9 @@ div > h2 {
   color: #da4e41;
   background-color: #da4e41;
 
-  text-align: center;
+  text-align: center;*/
+
+  display: none;
 }
 
 #menu_item:hover{
