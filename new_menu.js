@@ -6,6 +6,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
 
   $("#item_type1").click(function (e) {
     e.stopPropagation();
+
     $("#popup").html('<h2 id="close" class="close">X</h2>' + jQuery(this).siblings('#menu_item').text());
     if (on[0] == 0){
       overlay.style.display = "block";
