@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
 
   $(".it-outer").click(function (e) {
     e.stopPropagation();
-    $(".popup").html($(".item_type").siblings('.section').html());
+    $(".popup").html($('.section').html());
     if (on == 0){
       overlay.style.display = "block";
       on = 1;
