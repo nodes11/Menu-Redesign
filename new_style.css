@@ -3,7 +3,8 @@ div.it {
   position: relative;
   width: 33%;
 }
-div > h2.it{
+
+/*div > h2.it{
   padding: 10%;
   border: 2px solid black;
   border-radius: 5px;
@@ -11,12 +12,68 @@ div > h2.it{
   text-align: center;
   height: 100px;
   background-color: #da4e41;
+  background-image: url(burger.jpeg);
+  background-repeat: no-repeat; 
+  background-size: cover;
   color: white;
+}*/
+
+/* Outline of all elements */
+div > .it-outer {
+    border-top: 6px solid #da4e41; 
+    border-left: 6px solid #da4e41;
+    border-right: 6px solid #da4e41;
+    border-radius: 2.5px;
+
+    box-shadow: 2px 2px 15px #212121;
+    display: inline-block;
+    
+    opacity: .9;
+    width: 30%;
+    margin-bottom: 30px;
+    margin-right: 25px;
 }
 
-div > h2.it:hover{
-  background-color: transparent;
-  color: #da4e41;
+div > .b-image {
+    /* Set background properties */ 
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 2px solid antiquewhite;
+    border-radius: 2px;
+   
+    position: relative;
+    z-index: -2;
+    padding: 100px;
+    margin: 0;
+}
+
+    /* Set individual images */
+    .burger {
+        background-image: url(burger.jpeg);
+    }
+
+div > .item_type {
+    background-color: #da4e41;
+    text-align: center;
+    color: white;
+    
+    padding-top: 2px;
+    padding-bottom: 4px;
+    
+    font-family: Trebuchet MS; 
+    font-style: italic;
+    font-weight: 2000;
+    letter-spacing: 2px;
+    letter-spacing: 2px;
+    
+    position: relative;    
+    z-index: -1;
+    margin: 0;
+}
+
+div > .it-outer:hover{
+    text-shadow: 1px 1px 5px #212121;
+    cursor: pointer;
 }
 
 div > h2 {

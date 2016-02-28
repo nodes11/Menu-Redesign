@@ -4,9 +4,9 @@ var on = 0;
 document.addEventListener("DOMContentLoaded", function (event) {
   var overlay = document.getElementById("popup");
 
-  $(".item_type").click(function (e) {
+  $(".it-outer").click(function (e) {
     e.stopPropagation();
-    $(".popup").html($(this).siblings('.section').html());
+    $(".popup").html($(".item_type").siblings('.section').html());
     if (on == 0){
       overlay.style.display = "block";
       on = 1;
